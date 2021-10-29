@@ -1,0 +1,37 @@
+
+<html>
+    <body>
+    <h2 style = "color: blue">
+    Hey there guys! This is my try on Django templates!
+    <p>Thank you for visiting!</p>
+  </h2>
+<p>Att: {{nombre_persona}}</p>
+<p><strong>This are the following topics that im learning on the course:</strong></p>
+
+<p>
+  <ul>
+    {% if temas %}
+
+      {% for eltema in temas %}
+
+        <li>{{eltema}}</li>
+
+      {% endfor %}
+
+    {% else %}
+      <p>No hay elementos</p>
+
+    {% endif %}
+
+  </ul>
+
+{% comment %}
+
+Este curso es de Youtube por Pildorasinformaticas, pero me recomindan hacer mejor uno
+de LinkedIn
+
+{% endcomment %}
+
+</p>
+</body/>
+    </html>
